@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - My Travel Blog</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Gallery</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Travel Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./map.html">Map</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="gallery-item">
+                    <img src="./images/nepal-mountains.jpg" alt="Nepal Mountains" class="img-fluid" data-toggle="modal" data-target="#modalNepal">
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="gallery-item">
+                    <img src="./images/golden-beach.jpg" alt="Golden Beach" class="img-fluid" data-toggle="modal" data-target="#modalChennai">
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="gallery-item">
+                    <img src="./images/Bhutan-culture.jpg" alt="Bhutan Culture" class="img-fluid" data-toggle="modal" data-target="#modalBhutan">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="./images/nepal-mountains.jpg" class="card-img-top" alt="Nepal Mountains">
+                    <div class="card-body">
+                        <h5 class="card-title">Nepal Mountains</h5>
+                        <p class="card-text">Nepal is a haven for adventure seekers and nature enthusiasts. The Annapurna and Everest regions offer breathtaking views and challenging trekking routes. The region's diverse landscape includes lush valleys, terraced fields, and towering peaks, providing an unforgettable experience for visitors.</p>
+                        <p><strong>Location:</strong> Nepal, South Asia</p>
+                        <p><strong>Best Time to Visit:</strong> September to November</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="./images/golden-beach.jpg" class="card-img-top" alt="Golden Beach">
+                    <div class="card-body">
+                        <h5 class="card-title">Golden Beach, Chennai</h5>
+                        <p class="card-text">Golden Beach in Chennai is a popular spot known for its serene environment and stunning golden sands. It provides a perfect escape from the busy city life, with opportunities for relaxation and beachside activities. The area is also known for its beautiful sunrises and local food stalls.</p>
+                        <p><strong>Location:</strong> Chennai, India</p>
+                        <p><strong>Best Time to Visit:</strong> November to February</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="./images/Bhutan-culture.jpg" class="card-img-top" alt="Bhutan Culture">
+                    <div class="card-body">
+                        <h5 class="card-title">Bhutan Culture</h5>
+                        <p class="card-text">Bhutan's culture is deeply rooted in its traditions and heritage. The country is renowned for its vibrant festivals, traditional dance performances, and colorful arts and crafts. The unique cultural practices, coupled with its stunning natural beauty, make Bhutan a fascinating destination for travelers.</p>
+                        <p><strong>Location:</strong> Bhutan, South Asia</p>
+                        <p><strong>Best Time to Visit:</strong> March to May and September to November</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalNepal" tabindex="-1" aria-labelledby="modalNepalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalNepalLabel">Nepal Mountains</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="./images/nepal-mountains.jpg" alt="Nepal Mountains" class="img-fluid mb-3">
+                    <p>Nepal is renowned for its stunning mountain landscapes, including the Annapurna and Everest ranges. It offers breathtaking trekking routes and is a hub for adventure enthusiasts and nature lovers alike.</p>
+                    <p><strong>Location:</strong> Nepal, South Asia</p>
+                    <p><strong>Best Time to Visit:</strong> September to November</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalChennai" tabindex="-1" aria-labelledby="modalChennaiLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalChennaiLabel">Golden Beach, Chennai</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="./images/golden-beach.jpg" alt="Golden Beach" class="img-fluid mb-3">
+                    <p>Golden Beach is renowned for its golden sands and tranquil atmosphere, located 30 kilometers away from Chennai, making it a perfect getaway from the city's hustle and bustle.</p>
+                    <p><strong>Location:</strong> Chennai, India</p>
+                    <p><strong>Best Time to Visit:</strong> November to February</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalBhutan" tabindex="-1" aria-labelledby="modalBhutanLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalBhutanLabel">Bhutan Culture</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="./images/Bhutan-culture.jpg" alt="Bhutan Culture" class="img-fluid mb-3">
+                    <p>Bhutan is known for its vibrant cultural traditions and festivals. The country's unique heritage is reflected in its traditional dances, music, and ancient festivals, making it a fascinating place to explore.</p>
+                    <p><strong>Location:</strong> Bhutan, South Asia</p>
+                    <p><strong>Best Time to Visit:</strong> March to May and September to November</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p>&copy; 2024 My Travel Blog. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://facebook.com" class="text-white mx-2" target="_blank" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" class="text-white mx-2" target="_blank" title="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com" class="text-white mx-2" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com" class="text-white mx-2" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
